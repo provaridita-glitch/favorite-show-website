@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'StrangerThings';
+    src: url('../assets/Benguiat Bold.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+/* 1. Global Page Setup & Full-Screen Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+                url('../assets/creel-house.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'StrangerThings', serif;
+    line-height: 1.6;
+    padding-bottom: 60px;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 2. Side Vines Layout */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-image: url('../assets/ud-veins.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    z-index: 10;
+    pointer-events: none;
+}
+
+body::before {
+    left: 0;
+    background-position: left center;
+}
+
+body::after {
+    right: 0;
+    background-position: right center;
+    transform: scaleX(-1);
+}
+
+/* 3. Navigation Styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-bottom: 2px solid #8b0000;
+    position: relative;
+    z-index: 20;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e50914;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+/* 4. Main Page Header */
+header {
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+    position: relative;
+    z-index: 20;
+}
+
+.stranger-title {
+    font-family: 'StrangerThings', serif;
+    font-size: 4.5rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow:
+        -1px -1px 0 #e50914,
+         1px -1px 0 #e50914,
+        -1px  1px 0 #e50914,
+         1px  1px 0 #e50914,
+         0 0 10px #ff0000,
+         0 0 20px #ff0000,
+         0 0 30px #e50914;
+}
+
+.subtitle {
+    color: #b0b0b0;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* 5. Centralized Content Panels */
+main {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 20;
+}
+
+section {
+    background-color: rgba(18, 18, 18, 0.92);
+    border: 1px solid #331111;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+section h2 {
+    color: #e50914;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+section p {
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+/* 6. Action Streaming Button */
+.watch-btn {
+    display: inline-block;
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.watch-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* 7. Footer Layout */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 20;
+}
+
+/* ==========================================================================
+   8. Character Showcase
+   ========================================================================== */
+
+.character-showcase-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.showcase-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    gap: 60px;
+}
+
+.showcase-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.showcase-text {
+    flex: 1.2;
+}
+
+.showcase-text h3 {
+    color: #e50914;
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.showcase-text .char-meta {
+    color: #b0b0b0;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.showcase-text p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-shadow:
+        1px 1px 4px rgba(0, 0, 0, 0.95),
+        0 0 2px rgba(0, 0, 0, 1);
+}
+
+.showcase-img-wrapper {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-cutout {
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    filter:
+        drop-shadow(0 10px 20px rgba(0, 0, 0, 0.85))
+        drop-shadow(0 0 15px rgba(229, 9, 20, 0.25));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.showcase-cutout:hover {
+    transform: scale(1.04);
+    filter:
+        drop-shadow(0 10px 25px rgba(0, 0, 0, 0.9))
+        drop-shadow(0 0 25px rgba(229, 9, 20, 0.55));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .showcase-row,
+    .showcase-row:nth-child(even) {
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 35px;
+        margin-bottom: 80px;
+    }
+
+    .showcase-cutout {
+        max-height: 320px;
+    }
+
+    .stranger-title {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
