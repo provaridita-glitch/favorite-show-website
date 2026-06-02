@@ -1,14 +1,5 @@
-# Stranger Things Tribute Site
+The reason why I created this project from scratch was that I wanted to develop an awesome website about my favorite TV-show – Stranger Things – and present it to my dear friend.
 
-I made this project from scratch because I wanted to create a cool personal website dedicated to my favorite show, Stranger Things, and share it with a very special friend. 
-
-## 🎬 What this website has
-* **Home Page:** A landing page introducing the spooky theme of Hawkins and the Gateway to the Upside Down.
-* **Characters:** A page that lists and breaks down the main survivors from the show.
-* **Lore & Quotes:** A dedicated spot where I collected some of the best, most memorable quotes and background lore from the series.
-* **Navigation Menu:** A clean navigation bar at the top so you can easily click around and explore the different pages.
-
-## 💻 How I coded it
-* **HTML5:** I used this to build the backbone and structure for all my pages (`index.html`, `characters.html`, `lore.html`, and `quotes.html`).
-* **CSS3:** I wrote custom styles from scratch to give the site its dark, retro, atmospheric aesthetic to match the vibe of the show.
-* **Google Fonts:** I linked the "Oswald" and "Rowdies" fonts in my code to get that perfect retro thriller look for the headings.
+🎬 Features of the Website
+Home Page: The landing page is meant to introduce the viewer to the ominous concept of Hawkins and the Gateway to the Upside Down. Characters: The list of major survivors who appear in the series is provided in the corresponding section. Lore & Quotes: This part presents several notable quotes and pieces of information concerning the lore of Stranger Things. Navigation Menu: A straightforward navigation menu which enables users to explore the entire website easily.💻 The Process of Creating the Website
+HTML5: Used as the foundation for constructing pages – index.html, characters.html, lore.html, and quotes.html. CSS3 : My own style was developed from scratch to reflect the atmosphere of the retro thriller. Google Fonts: Oswald and Rowdies were used in my website in order to achieve the desired stylistic effect.
