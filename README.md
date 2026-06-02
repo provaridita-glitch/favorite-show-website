@@ -6,3 +6,5 @@ Home Page: The landing page is meant to introduce the viewer to the ominous conc
 
 💻 The Process of Creating the Website
 HTML5: Used as the foundation for constructing pages – index.html, characters.html, lore.html, and quotes.html. CSS3 : My own style was developed from scratch to reflect the atmosphere of the retro thriller. Google Fonts: Oswald and Rowdies were used in my website in order to achieve the desired stylistic effect.
+
+And to clarify, I used AI assist to help me build my project. As a beginner, I had difficulties building this. In this case, I took AI guide.
